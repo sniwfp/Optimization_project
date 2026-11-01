@@ -1,0 +1,35 @@
+{
+  "python": "3.13.5",
+  "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "command": [
+    "stochopt-bench",
+    "--dataset",
+    "a9a",
+    "--device",
+    "cpu",
+    "--epochs",
+    "15",
+    "--lr",
+    "0.1",
+    "--samplers",
+    "reshuffle",
+    "once",
+    "--schedulers",
+    "none",
+    "cosine",
+    "--batch-sizes",
+    "32",
+    "128",
+    "--output-dir",
+    "runs/a9a-grid"
+  ],
+  "omp_num_threads": "1",
+  "a9a_sha256": "f5d5ffd8d865ff41328e7ee043e4b020816914ff6843ff15b98905ddbedce906"
+}
